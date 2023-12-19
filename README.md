@@ -6,7 +6,6 @@ The Cisco ERSPAN mirrors traffic on one or more “source” ports and delivers 
 
 Configure source
 ```
-Configuration on Switch A (Source)
 SwitchA(config)# monitor session 1 type erspan-source
 SwitchA(config-mon-erspan-src)# source vlan 10
 SwitchA(config-mon-erspan-src)# destination
@@ -15,7 +14,6 @@ SwitchA(config-mon-erspan-src-dst)# ip address 192.0.2.2
 SwitchA(config-mon-erspan-src-dst)# origin ip address 192.0.2.1
 SwitchA(config-mon-erspan-src-dst)# exit
 SwitchA(config-mon-erspan-src)# no shutdown
-Configuration on Switch B (Destination)
 ```
 Configure destination
 ```
